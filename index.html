@@ -1,0 +1,2827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="KHAMRIZ Premium Super Basmati Rice. Finest Extra Long Grain, known for Aroma & Flavour.">
+
+    <meta name="keywords"
+          content="KHAMRIZ, Basmati Rice, Super Basmati, Pakistani Rice, Premium Rice">
+
+    <meta name="author"
+          content="KHAMRIZ">
+
+    <meta name="theme-color"
+          content="#102D24">
+
+    <title>
+        KHAMRIZ | Premium Super Basmati Rice
+    </title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   KHAMRIZ BRAND SYSTEM
+========================================================= */
+
+:root {
+
+    --green:
+        #102D24;
+
+    --green-dark:
+        #081D17;
+
+    --green-light:
+        #193F32;
+
+    --cream:
+        #F4EDDD;
+
+    --cream-dark:
+        #E8DCC5;
+
+    --gold:
+        #B79A5B;
+
+    --gold-light:
+        #D2B878;
+
+    --black:
+        #101713;
+
+    --text:
+        #26332D;
+
+    --muted:
+        #6D756F;
+
+    --white:
+        #FFFFFF;
+
+    --container:
+        1180px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    background:
+        var(--cream);
+
+    color:
+        var(--text);
+
+    overflow-x:
+        hidden;
+
+}
+
+
+img {
+
+    max-width:
+        100%;
+
+    display:
+        block;
+
+}
+
+
+a {
+
+    text-decoration:
+        none;
+
+    color:
+        inherit;
+
+}
+
+
+button {
+
+    font-family:
+        inherit;
+
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+
+    width:
+        min(
+            var(--container),
+            92%
+        );
+
+    margin:
+        0 auto;
+
+}
+
+
+section {
+
+    padding:
+        110px 0;
+
+}
+
+
+.eyebrow {
+
+    color:
+        var(--gold);
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        4px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        500;
+
+    margin-bottom:
+        16px;
+
+}
+
+
+.section-title {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            48px,
+            6vw,
+            76px
+        );
+
+    line-height:
+        .9;
+
+    font-weight:
+        500;
+
+    color:
+        var(--green);
+
+}
+
+
+.section-description {
+
+    max-width:
+        650px;
+
+    margin-top:
+        25px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.9;
+
+}
+
+
+.center {
+
+    text-align:
+        center;
+
+}
+
+
+.center .section-description {
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        15px 27px;
+
+    border:
+        1px solid var(--gold);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        1.8px;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        .3s ease;
+
+    cursor:
+        pointer;
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--gold);
+
+    color:
+        var(--green);
+
+}
+
+
+.btn-primary:hover {
+
+    background:
+        var(--gold-light);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.btn-outline {
+
+    color:
+        var(--cream);
+
+    border-color:
+        rgba(
+            244,
+            237,
+            221,
+            .45
+        );
+
+}
+
+
+.btn-outline:hover {
+
+    color:
+        var(--gold-light);
+
+    border-color:
+        var(--gold);
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+header {
+
+    position:
+        fixed;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    z-index:
+        1000;
+
+    background:
+        rgba(
+            16,
+            45,
+            36,
+            .96
+        );
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid
+        rgba(
+            210,
+            184,
+            120,
+            .15
+        );
+
+}
+
+
+.navbar {
+
+    height:
+        82px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+
+.logo {
+
+    width:
+        145px;
+
+}
+
+
+.logo img {
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+}
+
+
+.nav-links {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        34px;
+
+    list-style:
+        none;
+
+}
+
+
+.nav-links a {
+
+    color:
+        var(--cream);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        1.4px;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.nav-links a:hover {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.nav-order {
+
+    padding:
+        11px 18px;
+
+    border:
+        1px solid var(--gold);
+
+    color:
+        var(--gold-light) !important;
+
+}
+
+
+.menu-button {
+
+    display:
+        none;
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--cream);
+
+    font-size:
+        28px;
+
+    cursor:
+        pointer;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height:
+        100vh;
+
+    background:
+        var(--green);
+
+    color:
+        var(--cream);
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+}
+
+
+.hero::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        750px;
+
+    height:
+        750px;
+
+    border:
+        1px solid
+        rgba(
+            183,
+            154,
+            91,
+            .22
+        );
+
+    border-radius:
+        50%;
+
+    right:
+        -250px;
+
+    top:
+        90px;
+
+}
+
+
+.hero::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        500px;
+
+    height:
+        500px;
+
+    border:
+        1px solid
+        rgba(
+            183,
+            154,
+            91,
+            .14
+        );
+
+    border-radius:
+        50%;
+
+    right:
+        -100px;
+
+    top:
+        210px;
+
+}
+
+
+.hero-content {
+
+    min-height:
+        100vh;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items:
+        center;
+
+    gap:
+        60px;
+
+    padding-top:
+        80px;
+
+}
+
+
+.hero-text {
+
+    position:
+        relative;
+
+    z-index:
+        3;
+
+}
+
+
+.hero-kicker {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        4px;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.hero-kicker::before {
+
+    content:
+        "";
+
+    width:
+        45px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+}
+
+
+.hero h1 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            65px,
+            8vw,
+            110px
+        );
+
+    line-height:
+        .78;
+
+    letter-spacing:
+        -3px;
+
+    font-weight:
+        500;
+
+    margin:
+        30px 0;
+
+}
+
+
+.hero h1 span {
+
+    color:
+        var(--gold-light);
+
+    font-style:
+        italic;
+
+}
+
+
+.hero-description {
+
+    max-width:
+        550px;
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .68
+        );
+
+    font-size:
+        15px;
+
+    line-height:
+        1.9;
+
+}
+
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    gap:
+        12px;
+
+    margin-top:
+        35px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+.hero-image {
+
+    position:
+        relative;
+
+    z-index:
+        3;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+}
+
+
+.hero-image img {
+
+    width:
+        min(
+            500px,
+            90%
+        );
+
+    filter:
+        drop-shadow(
+            0 35px 35px
+            rgba(
+                0,
+                0,
+                0,
+                .4
+            )
+        );
+
+    animation:
+        floating
+        5s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(-1deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-14px)
+            rotate(1deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.introduction {
+
+    background:
+        var(--cream);
+
+}
+
+
+.introduction-inner {
+
+    max-width:
+        850px;
+
+    margin:
+        auto;
+
+    text-align:
+        center;
+
+}
+
+
+.introduction-mark {
+
+    width:
+        65px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+    margin:
+        30px auto;
+
+}
+
+
+/* =========================================================
+   PRODUCT
+========================================================= */
+
+.products {
+
+    background:
+        #EEE5D3;
+
+}
+
+
+.product-grid {
+
+    margin-top:
+        65px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        75px;
+
+    align-items:
+        center;
+
+}
+
+
+.product-image {
+
+    background:
+        var(--green);
+
+    padding:
+        35px;
+
+    position:
+        relative;
+
+}
+
+
+.product-image::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        15px;
+
+    border:
+        1px solid
+        rgba(
+            210,
+            184,
+            120,
+            .25
+        );
+
+    pointer-events:
+        none;
+
+}
+
+
+.product-image img {
+
+    width:
+        100%;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+}
+
+
+.product-info h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color:
+        var(--green);
+
+    font-size:
+        52px;
+
+    line-height:
+        .9;
+
+    font-weight:
+        500;
+
+}
+
+
+.gold-line {
+
+    width:
+        65px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+    margin:
+        25px 0;
+
+}
+
+
+.product-info p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.9;
+
+}
+
+
+.product-specifications {
+
+    margin-top:
+        30px;
+
+    border-top:
+        1px solid
+        rgba(
+            16,
+            45,
+            36,
+            .15
+        );
+
+}
+
+
+.specification {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid
+        rgba(
+            16,
+            45,
+            36,
+            .15
+        );
+
+    font-size:
+        13px;
+
+}
+
+
+.specification span:last-child {
+
+    color:
+        var(--gold);
+
+    font-weight:
+        600;
+
+}
+
+
+/* =========================================================
+   PACKAGING
+========================================================= */
+
+.packaging {
+
+    background:
+        var(--cream);
+
+}
+
+
+.packaging-grid {
+
+    margin-top:
+        60px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:
+        25px;
+
+}
+
+
+.package-card {
+
+    background:
+        var(--green);
+
+    padding:
+        25px;
+
+    text-align:
+        center;
+
+    transition:
+        .35s ease;
+
+}
+
+
+.package-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.package-card img {
+
+    width:
+        100%;
+
+    aspect-ratio:
+        1 / 1.15;
+
+    object-fit:
+        contain;
+
+}
+
+
+.package-card h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color:
+        var(--cream);
+
+    font-size:
+        30px;
+
+    margin-top:
+        12px;
+
+}
+
+
+.package-card p {
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .55
+        );
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        1px;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.story {
+
+    background:
+        var(--green);
+
+    color:
+        var(--cream);
+
+}
+
+
+.story-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        80px;
+
+    align-items:
+        center;
+
+}
+
+
+.story-image {
+
+    position:
+        relative;
+
+}
+
+
+.story-image img {
+
+    width:
+        100%;
+
+    min-height:
+        480px;
+
+    object-fit:
+        cover;
+
+}
+
+
+.story-copy .section-title {
+
+    color:
+        var(--cream);
+
+}
+
+
+.story-copy p {
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .65
+        );
+
+    font-size:
+        15px;
+
+    line-height:
+        1.95;
+
+    margin-top:
+        20px;
+
+}
+
+
+/* =========================================================
+   QUALITY
+========================================================= */
+
+.quality {
+
+    background:
+        var(--cream);
+
+}
+
+
+.quality-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    margin-top:
+        60px;
+
+    border:
+        1px solid
+        rgba(
+            16,
+            45,
+            36,
+            .14
+        );
+
+}
+
+
+.quality-card {
+
+    padding:
+        40px 28px;
+
+    border-right:
+        1px solid
+        rgba(
+            16,
+            45,
+            36,
+            .14
+        );
+
+}
+
+
+.quality-card:last-child {
+
+    border-right:
+        none;
+
+}
+
+
+.quality-number {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        24px;
+
+}
+
+
+.quality-card h3 {
+
+    color:
+        var(--green);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        31px;
+
+    margin:
+        25px 0 10px;
+
+}
+
+
+.quality-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.order {
+
+    background:
+        #EEE5D3;
+
+}
+
+
+.order-box {
+
+    background:
+        var(--green);
+
+    text-align:
+        center;
+
+    padding:
+        80px 30px;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+}
+
+
+.order-box::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        500px;
+
+    height:
+        500px;
+
+    border:
+        1px solid
+        rgba(
+            210,
+            184,
+            120,
+            .15
+        );
+
+    border-radius:
+        50%;
+
+    left:
+        -200px;
+
+    top:
+        -250px;
+
+}
+
+
+.order-box .section-title {
+
+    color:
+        var(--cream);
+
+    position:
+        relative;
+
+}
+
+
+.order-box p {
+
+    max-width:
+        580px;
+
+    margin:
+        25px auto 30px;
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .62
+        );
+
+    position:
+        relative;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background:
+        var(--green-dark);
+
+    color:
+        var(--cream);
+
+    padding:
+        65px 0 25px;
+
+}
+
+
+.footer-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap:
+        50px;
+
+    padding-bottom:
+        45px;
+
+}
+
+
+.footer-logo {
+
+    width:
+        150px;
+
+}
+
+
+.footer-description {
+
+    max-width:
+        390px;
+
+    margin-top:
+        20px;
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .5
+        );
+
+    font-size:
+        13px;
+
+    line-height:
+        1.8;
+
+}
+
+
+.footer-title {
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        2px;
+
+    text-transform:
+        uppercase;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.footer-links {
+
+    list-style:
+        none;
+
+}
+
+
+.footer-links li {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.footer-links a {
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .55
+        );
+
+    font-size:
+        13px;
+
+    transition:
+        .25s;
+
+}
+
+
+.footer-links a:hover {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.footer-bottom {
+
+    border-top:
+        1px solid
+        rgba(
+            210,
+            184,
+            120,
+            .15
+        );
+
+    padding-top:
+        20px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    color:
+        rgba(
+            244,
+            237,
+            221,
+            .3
+        );
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+
+        display:
+            none;
+
+        position:
+            absolute;
+
+        top:
+            82px;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            var(--green-dark);
+
+        padding:
+            30px;
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            22px;
+
+    }
+
+
+    .nav-links.active {
+
+        display:
+            flex;
+
+    }
+
+
+    .menu-button {
+
+        display:
+            block;
+
+    }
+
+
+    .hero-content {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            130px 0 70px;
+
+        text-align:
+            center;
+
+    }
+
+
+    .hero-kicker {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .hero-image {
+
+        order:
+            -1;
+
+    }
+
+
+    .hero-image img {
+
+        width:
+            min(
+                390px,
+                82%
+            );
+
+    }
+
+
+    .product-grid,
+    .story-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .quality-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .quality-card {
+
+        border-bottom:
+            1px solid
+            rgba(
+                16,
+                45,
+                36,
+                .14
+            );
+
+    }
+
+
+    .packaging-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    section {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            67px;
+
+    }
+
+
+    .product-grid {
+
+        gap:
+            40px;
+
+    }
+
+
+    .packaging-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .quality-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .quality-card {
+
+        border-right:
+            none;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .footer-bottom {
+
+        flex-direction:
+            column;
+
+        gap:
+            10px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+    <div class="container navbar">
+
+
+        <a href="#home"
+           class="logo">
+
+            <img src="assets/logo-light.png"
+                 alt="KHAMRIZ Premium Super Basmati">
+
+        </a>
+
+
+        <button class="menu-button"
+                id="menuButton"
+                aria-label="Open menu">
+
+            ☰
+
+        </button>
+
+
+        <ul class="nav-links"
+            id="navLinks">
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#rice">
+                    Our Rice
+                </a>
+            </li>
+
+            <li>
+                <a href="#packaging">
+                    Packaging
+                </a>
+            </li>
+
+            <li>
+                <a href="#story">
+                    Our Story
+                </a>
+            </li>
+
+            <li>
+                <a href="#quality">
+                    Quality
+                </a>
+            </li>
+
+            <li>
+                <a href="#order"
+                   class="nav-order">
+                    Order
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero"
+         id="home">
+
+    <div class="container hero-content">
+
+
+        <div class="hero-text">
+
+
+            <div class="hero-kicker">
+
+                Premium Pakistani Rice
+
+            </div>
+
+
+            <h1>
+
+                The art of
+                <br>
+
+                <span>
+                    exceptional
+                </span>
+
+                <br>
+
+                rice.
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                KHAMRIZ Premium Super Basmati —
+                Finest Extra Long Grain, known for
+                Aroma & Flavour.
+
+                <br><br>
+
+                A refined rice experience rooted
+                in Pakistani heritage.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="#rice"
+                   class="btn btn-primary">
+
+                    Discover KHAMRIZ
+
+                </a>
+
+
+                <a href="#order"
+                   class="btn btn-outline">
+
+                    Order Now
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+            <img src="assets/hero-bag.jpg"
+                 alt="KHAMRIZ Premium Super Basmati Rice">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="introduction">
+
+    <div class="container introduction-inner">
+
+
+        <div class="eyebrow">
+
+            The KHAMRIZ Difference
+
+        </div>
+
+
+        <h2 class="section-title">
+
+            Premium grain.
+            <br>
+            Distinctive character.
+
+        </h2>
+
+
+        <div class="introduction-mark"></div>
+
+
+        <p class="section-description">
+
+            We believe premium rice should be
+            recognized from the first look to the
+            final bite.
+
+            KHAMRIZ brings together carefully selected
+            Super Basmati rice, elegant presentation,
+            aroma and flavour.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OUR RICE
+===================================================== -->
+
+<section class="products"
+         id="rice">
+
+    <div class="container">
+
+
+        <div class="center">
+
+            <div class="eyebrow">
+
+                Our Rice
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Super Basmati
+
+            </h2>
+
+
+            <p class="section-description">
+
+                Finest Extra Long Grain Basmati,
+                known for Aroma & Flavour.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="product-grid">
+
+
+            <div class="product-image">
+
+                <img src="assets/hero-bag.jpg"
+                     alt="KHAMRIZ Super Basmati Rice">
+
+            </div>
+
+
+
+            <div class="product-info">
+
+
+                <h3>
+
+                    A grain worth
+                    remembering.
+
+                </h3>
+
+
+                <div class="gold-line"></div>
+
+
+                <p>
+
+                    KHAMRIZ Premium Super Basmati
+                    is selected for its elegant grain,
+                    aroma and flavour.
+
+                    Designed for meals where quality
+                    matters.
+
+                </p>
+
+
+                <div class="product-specifications">
+
+
+                    <div class="specification">
+
+                        <span>
+                            Variety
+                        </span>
+
+                        <span>
+                            Super Basmati
+                        </span>
+
+                    </div>
+
+
+                    <div class="specification">
+
+                        <span>
+                            Grain
+                        </span>
+
+                        <span>
+                            Extra Long
+                        </span>
+
+                    </div>
+
+
+                    <div class="specification">
+
+                        <span>
+                            Aroma
+                        </span>
+
+                        <span>
+                            Premium
+                        </span>
+
+                    </div>
+
+
+                    <div class="specification">
+
+                        <span>
+                            Flavour
+                        </span>
+
+                        <span>
+                            Distinctive
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PACKAGING
+===================================================== -->
+
+<section class="packaging"
+         id="packaging">
+
+    <div class="container">
+
+
+        <div class="center">
+
+            <div class="eyebrow">
+
+                The Collection
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Presented with purpose.
+
+            </h2>
+
+
+            <p class="section-description">
+
+                KHAMRIZ packaging combines
+                heritage-inspired elegance with
+                a premium modern presentation.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="packaging-grid">
+
+
+            <div class="package-card">
+
+                <img src="assets/5kg-bag.jpg"
+                     alt="KHAMRIZ Rice 5 KG">
+
+                <h3>
+                    5 KG
+                </h3>
+
+                <p>
+                    Premium Pack
+                </p>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <img src="assets/10kg-bag.jpg"
+                     alt="KHAMRIZ Rice 10 KG">
+
+                <h3>
+                    10 KG
+                </h3>
+
+                <p>
+                    Family Pack
+                </p>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <img src="assets/15kg-bag.jpg"
+                     alt="KHAMRIZ Rice 15 KG">
+
+                <h3>
+                    15 KG
+                </h3>
+
+                <p>
+                    Family Pack
+                </p>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <img src="assets/25kg-bag.jpg"
+                     alt="KHAMRIZ Rice 25 KG">
+
+                <h3>
+                    25 KG
+                </h3>
+
+                <p>
+                    Premium Bulk
+                </p>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <img src="assets/50kg-bag.jpg"
+                     alt="KHAMRIZ Rice 50 KG">
+
+                <h3>
+                    50 KG
+                </h3>
+
+                <p>
+                    Commercial Pack
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OUR STORY
+===================================================== -->
+
+<section class="story"
+         id="story">
+
+    <div class="container story-grid">
+
+
+        <div class="story-image">
+
+            <img src="assets/field.jpg"
+                 alt="Pakistani rice fields">
+
+        </div>
+
+
+
+        <div class="story-copy">
+
+
+            <div class="eyebrow">
+
+                Our Heritage
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Rooted in
+                <br>
+                Pakistani rice culture.
+
+            </h2>
+
+
+            <p>
+
+                KHAMRIZ is built around a simple
+                belief: premium rice should feel
+                premium from the moment you see
+                the package.
+
+            </p>
+
+
+            <p>
+
+                Our visual identity brings together
+                deep forest green, warm ivory and
+                antique gold — expressing heritage,
+                quality and refinement.
+
+            </p>
+
+
+            <p>
+
+                At the heart of KHAMRIZ is a
+                commitment to an exceptional
+                Super Basmati experience.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUALITY
+===================================================== -->
+
+<section class="quality"
+         id="quality">
+
+    <div class="container">
+
+
+        <div class="center">
+
+            <div class="eyebrow">
+
+                The KHAMRIZ Standard
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Nothing ordinary.
+
+            </h2>
+
+
+            <p class="section-description">
+
+                A premium identity deserves
+                a premium grain.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="quality-grid">
+
+
+            <div class="quality-card">
+
+                <div class="quality-number">
+                    01
+                </div>
+
+                <h3>
+                    Extra Long Grain
+                </h3>
+
+                <p>
+                    Elegant, slender grains
+                    designed for a refined
+                    dining experience.
+                </p>
+
+            </div>
+
+
+
+            <div class="quality-card">
+
+                <div class="quality-number">
+                    02
+                </div>
+
+                <h3>
+                    Aroma
+                </h3>
+
+                <p>
+                    The distinctive fragrance
+                    associated with premium
+                    Basmati rice.
+                </p>
+
+            </div>
+
+
+
+            <div class="quality-card">
+
+                <div class="quality-number">
+                    03
+                </div>
+
+                <h3>
+                    Flavour
+                </h3>
+
+                <p>
+                    A distinctive flavour
+                    designed to complement
+                    every meal.
+                </p>
+
+            </div>
+
+
+
+            <div class="quality-card">
+
+                <div class="quality-number">
+                    04
+                </div>
+
+                <h3>
+                    Premium
+                </h3>
+
+                <p>
+                    From grain selection to
+                    presentation, every detail
+                    matters.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ORDER
+===================================================== -->
+
+<section class="order"
+         id="order">
+
+    <div class="container">
+
+
+        <div class="order-box">
+
+
+            <div class="eyebrow">
+
+                Bring KHAMRIZ Home
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Make every meal
+                <br>
+                worth remembering.
+
+            </h2>
+
+
+            <p>
+
+                Ready to order KHAMRIZ Premium
+                Super Basmati Rice?
+
+                Contact us directly through
+                WhatsApp.
+
+            </p>
+
+
+            <!--
+                IMPORTANT:
+                Replace 923000000000
+                with your actual WhatsApp number.
+            -->
+
+
+            <a href="https://wa.me/923000000000?text=Hello%20KHAMRIZ%2C%20I%20would%20like%20to%20place%20an%20order."
+               class="btn btn-primary"
+               target="_blank">
+
+                Order on WhatsApp
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+
+                <img src="assets/logo-light.png"
+                     alt="KHAMRIZ"
+                     class="footer-logo">
+
+
+                <p class="footer-description">
+
+                    KHAMRIZ Premium Super Basmati.
+
+                    Finest Extra Long Grain,
+                    known for Aroma & Flavour.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div>
+
+
+                <div class="footer-title">
+                    Explore
+                </div>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#rice">
+                            Our Rice
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#packaging">
+                            Packaging
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#story">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#quality">
+                            Quality
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div>
+
+
+                <div class="footer-title">
+                    Contact
+                </div>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#order">
+                            Order Now
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/923489371745"
+                           target="_blank">
+                            WhatsApp
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@khamriz.com">
+                            info@khamriz.com
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 KHAMRIZ.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                PREMIUM SUPER BASMATI RICE
+            </span>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+const menuButton =
+    document.getElementById(
+        "menuButton"
+    );
+
+const navLinks =
+    document.getElementById(
+        "navLinks"
+    );
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        navLinks.classList.toggle(
+            "active"
+        );
+
+    }
+);
+
+
+document
+    .querySelectorAll(
+        ".nav-links a"
+    )
+    .forEach(
+        function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    navLinks.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>
